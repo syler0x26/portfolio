@@ -50,3 +50,21 @@ if (words.length > 1 && !reduceMotion) {
     setTimeout(() => out.classList.remove('is-leaving'), 1000);
   }, 3200);
 }
+
+const root = document.documentElement;
+const themeBtn = document.getElementById('theme-switch');
+
+const syncTheme = () => {
+  themeBtn.setAttribute('aria-checked', root.dataset.theme === 'dark');
+};
+
+themeBtn.addEventListener('click', () => {
+  const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  root.dataset.theme = next;
+  try {
+    localStorage.setItem('theme', next);
+  } catch (e) {}
+  syncTheme();
+});
+
+syncTheme();

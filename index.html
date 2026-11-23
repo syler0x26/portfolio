@@ -28,18 +28,24 @@
       <path
         d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
     </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
   </svg>
-
+<button class="theme-switch" id="theme-switch" type="button" role="switch" aria-checked="false" aria-label="Alternar modo escuro">
+  <svg class="icon sun"><use href="#i-sun"/></svg>
+  <svg class="icon moon"><use href="#i-moon"/></svg>
+  <span class="thumb"></span>
+</button>
   <section class="hero">
     <div class="container">
-<h1 class="reveal">
-  Olá, meu nome é
-  <span class="accent swap" role="text" aria-label="Syler">
-    <span class="word is-active" data-word="Syler"></span>
-    <span class="word" data-word="Wesley"></span>
-  </span><br>
-  Esse é meu <span class="accent">Portifolio.</span>
-</h1>
+      <h1 class="reveal">
+        Olá, meu nome é
+        <span class="accent swap" role="text" aria-label="Syler">
+          <span class="word is-active" data-word="Syler"></span>
+          <span class="word" data-word="Wesley"></span>
+        </span><br>
+        Esse é meu <span class="accent">Portifolio.</span>
+      </h1>
       <a href="#about" class="btn reveal">Saiba mais</a>
     </div>
   </section>
@@ -137,8 +143,7 @@
   <footer>
     <div class="container">
       <div class="social">
-        <a href="https://wa.me/553171052987" target="_blank" rel="noopener" aria-label="WhatsApp"><svg
-            class="icon">
+        <a href="https://wa.me/553171052987" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon">
             <use href="#i-wa" />
           </svg></a>
         <a href="https://instagram.com/syler0x26" target="_blank" rel="noopener" aria-label="Instagram"><svg
@@ -154,6 +159,10 @@
   </footer>
 
   <script src="main.js"></script>
+  <meta name="color-scheme" content="light dark">
+<script>
+  document.documentElement.dataset.theme = 'light';
+</script>
 </body>
 
 </html>
