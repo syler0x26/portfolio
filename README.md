@@ -2,7 +2,7 @@
 
 Versão simples e leve do meu site de portfólio pessoal - HTML, CSS e JavaScript puro, sem frameworks ou build tools.
 
-🔗 **[Ver site online](hhhh)**
+🔗 **[Ver site online]([hhhh](https://syler0x26.github.io/portfolio/))**
 
 ---
 
